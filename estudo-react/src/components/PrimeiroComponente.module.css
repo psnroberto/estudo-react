@@ -1,0 +1,18 @@
+.primeiroContainer {
+    border: 3px solid black;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+
+- Podemos criar estilos CSS separados para cada componente dos nossos projetos. Para isso, devemos criar um arquivo com a extensão ".module.css", e dentro dele definir os estilos que desejamos, através de classes;
+
+- Estes arquivos não são exportados, como os componentes criados em JS;
+
+- Nos componentes JS em que desejamos aplicar os módulos CSS, devemos importar o arquivo através de "import styles from ...";
+
+- Por final, devemos adicionar a classe criada dentro do módulo CSS ao elemento de interesse dentro do componente JS, através de "className={styles.NOMEDACLASSE}".
+
+*/
