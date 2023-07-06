@@ -3,6 +3,9 @@ import './App.css';
 import PrimeiroComponente from './components/PrimeiroComponente' // Estamos importando a função "primeiroComponente()" do arquivo JS "PrimeiroComponente". Se este arquivo tivesse mais de uma função, devemos indicar qual delas devemos importar;
 import TerceiroComponente from './components/TerceiroComponente'
 import styles from './components/TerceiroComponente.module.css'
+import QuartoComponente from './components/QuartoComponente';
+import QuintoComponente from './components/QuintoComponente';
+import SextoComponente from './components/SextoComponente'
 
 function App() {
 
@@ -33,6 +36,9 @@ function App() {
       </h1>
       <TerceiroComponente nome='Roberto' idade='31' cidade='Contagem' />
       <TerceiroComponente nome='Rubia' idade='34' cidade='Belo Horizonte' />
+      <QuartoComponente/>
+      <QuintoComponente/>
+      <SextoComponente/>
     </div>
   );
 }
