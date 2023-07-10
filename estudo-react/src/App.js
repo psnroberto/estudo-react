@@ -6,6 +6,7 @@ import styles from './components/TerceiroComponente.module.css'
 import QuartoComponente from './components/QuartoComponente';
 import QuintoComponente from './components/QuintoComponente';
 import SextoComponente from './components/SextoComponente'
+import SetimoComponente from './components/SetimoComponente';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
       <QuartoComponente/>
       <QuintoComponente/>
       <SextoComponente/>
+      <SetimoComponente/>
     </div>
   );
 }
