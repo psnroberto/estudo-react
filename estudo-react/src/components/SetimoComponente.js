@@ -8,10 +8,10 @@ import { useState } from 'react'
 function SetimoComponente() {
 
     function verificaNumero() { // Função para verificar se o número digitaro é par;
-        if (numero % 2 === 0 && numero != '') return true
+        if (numero % 2 === 0 || numero === 0) return true
     }
 
-    const [numero, setNumero] = useState() // Faremos o rastreio e atualização dos valores digitados no input deste componente através do "useState()"
+    const [numero, setNumero] = useState(0) // Faremos o rastreio e atualização dos valores digitados no input deste componente através do "useState()"
 
     return (
         <div>
@@ -32,18 +32,22 @@ function SetimoComponente() {
             
             - Podemos fazer a verificação de uma única condição em nossos JSX através da sintaxe "{VARIÁVEL/FUNÇÃO => CONDIÇÃO => && (RETORNO CASO A CONDIÇÃO SEJA ATENDIDA)};
             
-            - Funciona como um "if/else" 
+            - Funciona como um "if/else", porém utilizando os operadores ternários "&&" e ""; 
             
             */}
 
-            {verificaNumero() === true && (
+            {verificaNumero() === true ? (
                 <div>
                     <p>O número digitado é par!</p>
                 </div>   
-            )}
+            ) : 
+                <div>
+                    <p>O número digitado é ímpar!</p>
+                </div>
+
+            }
         </div>
     )
-
 }
 
 export default SetimoComponente
